@@ -9,44 +9,8 @@ class App extends React.Component{
   render() {
     return (
     <>
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
-      <Pixels />
+      {[...Array(160)].map((e, i) => <Pixels key={i}/>)}
+      
     </>
   )
   }
