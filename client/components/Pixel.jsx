@@ -16,7 +16,7 @@ export default class Pixel extends React.Component {
         backgroundColor: randomColour()
       }
     }
-    // Uncomment this to play with changing the colours every `n` seconds
+    // Uncomment line below to play with changing the colours every `n` seconds
     // what happens when you change the total number of pixels on the scren?
     // setInterval(this.changeColour, 1000)
   }
