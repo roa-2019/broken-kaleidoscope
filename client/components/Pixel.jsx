@@ -9,8 +9,8 @@ class Pixel extends React.Component {
     super(props)
     this.state = {
       style: {
-        height: '20px',
-        width: '20px',
+        height: '5px',
+        width: '5px',
         backgroundColor: randomHexColor(),
       }
     }
@@ -23,8 +23,8 @@ class Pixel extends React.Component {
   mouseOverHandler = evt => {
     this.setState({
       style: {
-        height: '20px',
-        width: '20px',
+        height: '5px',
+        width: '5px',
         backgroundColor: randomHexColor(),
       }
     })
@@ -34,8 +34,8 @@ class Pixel extends React.Component {
   contextHandler = evt => {
     this.setState({
       style: {
-        height: '20px',
-        width: '20px',
+        height: '5px',
+        width: '5px',
         backgroundColor: 'black',
       }
     })
@@ -45,8 +45,8 @@ class Pixel extends React.Component {
   doubleClickHandler = evt => {
     this.setState({
       style: {
-        height: '20px',
-        width: '20px',
+        height: '5px',
+        width: '5px',
         backgroundColor: 'white',
       }
     })
@@ -57,8 +57,8 @@ class Pixel extends React.Component {
     console.log('click')
     this.setState({
       style: {
-        height: '20px',
-        width: '20px',
+        height: '5px',
+        width: '5px',
         backgroundColor: 'yellow',
       }
     })
