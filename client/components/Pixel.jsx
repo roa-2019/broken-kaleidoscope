@@ -28,10 +28,11 @@ class Pixel extends React.Component {
     });
   };
 
+
   render() {
     return (
       <div>
-        <div id='app' style={this.state.style} onClick={this.clickHandler}>
+        <div id='app' style={this.state.style} onClick={this.clickHandler} onMouseEnter={this.clickHandler}>
         </div>
       </div>
     );
