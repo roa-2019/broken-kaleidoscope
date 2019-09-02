@@ -9,7 +9,6 @@ class Pixel extends React.Component {
     super(props)
     this.state = {
       style: {
-        fontFamily: 'Time New Roman',
         height: '20px',
         width: '20px',
         backgroundColor: randomHexColor(),
@@ -19,9 +18,9 @@ class Pixel extends React.Component {
   }
 
   clickHandler = evt => {
+    console.log('click')
     this.setState({
       style: {
-        fontFamily: 'Time New Roman',
         height: '20px',
         width: '20px',
         backgroundColor: randomHexColor(),
@@ -31,10 +30,10 @@ class Pixel extends React.Component {
 
   render() {
     return (
-      <button onClick={() => this.clickHandler()}>
-        <div style={this.state.style}>
+      
+        <div onMouseOver={this.clickHandler} style={this.state.style}>
         </div>
-      </button>
+      
     )
   }
 }
