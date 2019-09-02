@@ -17,14 +17,44 @@ class Pixel extends Component {
     })
   }
 
+  handleMouseEnter = () => {
+    this.setState({
+      backgroundColor: '#c9ff99'
+    })
+  }
+
+  handleContextMenu = () => {
+    this.setState({
+      backgroundColor: '#000000'
+    })
+  }
+
+  handleDoubleClick = () => {
+    this.setState({
+      backgroundColor: '#ffffff'
+    })
+  }
+
+  handleDragEnter = () => {
+    this.setState({
+      backgroundColor: '#fffd7d'
+    })
+  }
+
   render() {
     return (
       <div style={{
-        height: '100px',
-        width: '100px',
+        height: '30px',
+        width: '30px',
         cursor: 'pointer',
         backgroundColor: this.state.backgroundColor
-      }} onClick={this.handleClick}>
+      }}
+        onClick={this.handleClick}
+        onMouseEnter={this.handleMouseEnter}
+        onContextMenu={this.handleContextMenu}
+        onDoubleClick={this.handleDoubleClick}
+        onDragEnter={this.handleDragEnter}
+      >
       </div>
     )
   }
