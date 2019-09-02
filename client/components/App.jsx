@@ -1,48 +1,8 @@
-import React from 'react'
-import Pixel from './Pixel'
+import React from 'react';
+import Pixel from './Pixel';
 
 const App = () => {
-  return (
-    <React.Fragment>
-      <div></div>
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-    </React.Fragment>
-  );
-}
+  return Array.from({ length: 30000}, () => <Pixel />);
+};
 
-export default App
+export default App;

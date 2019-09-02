@@ -11,8 +11,8 @@ class Pixel extends React.Component {
 
     this.state = {
       style: {
-        height: '100px',
-        width: '100px',
+        height: '3px',
+        width: '3px',
         backgroundColor: randomHexColor()
       }
     };
@@ -21,8 +21,8 @@ class Pixel extends React.Component {
   clickHandler = () => {
     this.setState({
       style: {
-        height: '100px',
-        width: '100px',
+        height: '3px',
+        width: '3px',
         backgroundColor: randomHexColor()
       }
     });
@@ -31,8 +31,8 @@ class Pixel extends React.Component {
   blackSquares = () => {
     this.setState({
       style: {
-        height: '100px',
-        width: '100px',
+        height: '3px',
+        width: '3px',
         backgroundColor: 'black'
       }
     });
@@ -42,8 +42,8 @@ class Pixel extends React.Component {
   whiteSquares = () => {
     this.setState({
       style: {
-        height: '100px',
-        width: '100px',
+        height: '3px',
+        width: '3px',
         backgroundColor: 'white'
       }
     });
@@ -53,8 +53,8 @@ class Pixel extends React.Component {
   yellowSquares = () => {
     this.setState({
       style: {
-        height: '100px',
-        width: '100px',
+        height: '3px',
+        width: '3px',
         backgroundColor: 'yellow'
       }
     });
