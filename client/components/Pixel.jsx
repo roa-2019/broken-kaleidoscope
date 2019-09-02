@@ -30,11 +30,19 @@ export default class Pixel extends React.Component {
     })
   }
 
-
+  mouseOver = () => {
+    this.setState({
+      style: {
+        height: '50px',
+        width: '50px',
+        backgroundColor: 'ForestGreen'
+      }
+    })
+  }
 
   render() {
     return (
-      <div style={this.state.style} onClick={this.clickHandler}></div>
+      <div style={this.state.style} onClick={this.clickHandler} onMouseEnter={this.mouseOver}></div>
     )
   }
 }
