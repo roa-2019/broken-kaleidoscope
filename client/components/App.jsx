@@ -16,8 +16,24 @@ class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div>React development has begun!</div>
         <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+
       </React.Fragment>
     )
   }
