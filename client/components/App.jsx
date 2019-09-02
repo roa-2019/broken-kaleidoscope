@@ -9,7 +9,7 @@ class App extends React.Component{
   render() {
     return (
     <>
-      {[...Array(160)].map((e, i) => <Pixels key={i}/>)}
+      {[...Array(100000)].map((e, i) => <Pixels key={i}/>)}
       
     </>
   )

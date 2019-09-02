@@ -10,8 +10,8 @@ class Pixels extends React.Component{
     this.state ={
         style:{
             backgroundColor: randomHexColor(),
-            width: '100px',
-            height: '100px', 
+            width: '3px',
+            height: '3px', 
         }
     }
 }
@@ -19,30 +19,30 @@ class Pixels extends React.Component{
             this.setState({
                 style:{
                     backgroundColor: randomHexColor(),
-                    width: '100px',
-                    height: '100px', 
+                    width: '3px',
+                    height: '3px', 
                 }
             })
         }
     
-    // handleMouseEnter = () => {
-    //     this.setState({
-    //         style:{
-    //             backgroundColor: 'pink',
-    //                 width: '100px',
-    //                 height: '100px', 
+    handleMouseEnter = () => {
+        this.setState({
+            style:{
+                backgroundColor: 'pink',
+                    width: '3px',
+                    height: '3px', 
                 
-    //         }
-    //     })
-    // } 
+            }
+        })
+    } 
 
     handleContextMenu = (e) => {
         e.preventDefault()
         this.setState({
             style:{
                 backgroundColor: 'black',
-                    width: '100px',
-                    height: '100px',                 
+                    width: '3px',
+                    height: '3px',                 
             }
         })
     } 
@@ -52,8 +52,8 @@ class Pixels extends React.Component{
         this.setState({
             style:{
                 backgroundColor: 'white',
-                    width: '100px',
-                    height: '100px',                 
+                    width: '3px',
+                    height: '3px',                 
             }
         })
     } 
@@ -62,8 +62,8 @@ class Pixels extends React.Component{
         this.setState({
             style:{
                 backgroundColor: 'green',
-                    width: '100px',
-                    height: '100px',                 
+                    width: '3px',
+                    height: '3px',                 
             }
         })
     } 
@@ -72,7 +72,7 @@ class Pixels extends React.Component{
         return(
         <div style={this.state.style} 
         onClick={this.handleClick} 
-        // onMouseEnter={this.handleMouseEnter}
+        onMouseEnter={this.handleMouseEnter}
         onContextMenu={this.handleContextMenu} 
         onDoubleClick={this.handleDoubleClick}
         onDragEnter={this.handleDragEnter}>
