@@ -1,12 +1,11 @@
 import React from 'react'
-
+import randomHexColor from '../helpers.js'
 
 class Pixels extends React.Component{
     constructor(props){
     super(props)
 
-    const randomHexColor = () =>
-    `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
+    
    
     this.state ={
         style:{
@@ -15,11 +14,21 @@ class Pixels extends React.Component{
             height: '100px', 
         }
     }
-                   
 }
+    handleClick = () => {
+            this.setState({
+                style:{
+                    backgroundColor: randomHexColor(),
+                    width: '100px',
+                    height: '100px', 
+                }
+            })
+        }
+
+
     render(){
         return(
-        <div style={this.state.style}>
+        <div style={this.state.style} onClick={this.handleClick}>
         </div>
     )
     }    
