@@ -41,7 +41,6 @@ class Pixel extends React.Component {
       newColor = colors[currentColor + 1]
       currentColor += 1
     }
-    console.log(colors, currentColor, newColor)
     this.setState({
       style: {
         width:'20px', 
