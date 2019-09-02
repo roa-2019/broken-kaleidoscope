@@ -17,6 +17,7 @@ class Pixel extends React.Component {
     this.mouseOverHandler = this.mouseOverHandler.bind(this)
     this.contextHandler = this.contextHandler.bind(this)
     this.doubleClickHandler = this.doubleClickHandler.bind(this)
+    this.dragHandler = this.dragHandler.bind(this)
   }
 
   mouseOverHandler = evt => {
@@ -27,6 +28,7 @@ class Pixel extends React.Component {
         backgroundColor: randomHexColor(),
       }
     })
+    evt.preventDefault()
   }
 
   contextHandler = evt => {
@@ -37,10 +39,10 @@ class Pixel extends React.Component {
         backgroundColor: 'black',
       }
     })
+    evt.preventDefault()
   }
 
   doubleClickHandler = evt => {
-    console.log('click')
     this.setState({
       style: {
         height: '20px',
@@ -48,14 +50,29 @@ class Pixel extends React.Component {
         backgroundColor: 'white',
       }
     })
+    evt.preventDefault()
+  }
+
+  dragHandler = evt => {
+    console.log('click')
+    this.setState({
+      style: {
+        height: '20px',
+        width: '20px',
+        backgroundColor: 'yellow',
+      }
+    })
+    evt.preventDefault()
   }
 
   render() {
     return (
       
-        <div onMouseOver={this.mouseOverHandler}
+        <div
+        onMouseOver={this.mouseOverHandler}
         onContextMenu={this.contextHandler}
         onDoubleClick={this.doubleClickHandler}
+        onDragEnter={this.dragHandler}
          style={this.state.style}>
         </div>
       
