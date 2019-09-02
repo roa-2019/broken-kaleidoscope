@@ -8,90 +8,19 @@ class App extends React.Component {
     super(props)
   }
   render() {
-    return (
+    return [
       <React.Fragment>
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
-        <Pixel />
+        <Pixel />,
+        <Pixel />,
+        <Pixel />,
+        <Pixel />,
+        <Pixel />,
         <Pixel />
       </React.Fragment>
-    )
+    ]
   }
 }
 
+// return Array.from({ length: 1000 }, (item,i) => <Pixel key={i}/>)
 
 export default App
