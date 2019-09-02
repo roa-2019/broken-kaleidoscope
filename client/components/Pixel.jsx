@@ -25,8 +25,18 @@ class Pixel extends React.Component {
         })
     }
 
+    overHandler = evt => {
+        this.setState({
+            style:{
+                height: 10,
+                width: 10,
+                backgroundColor: 'purple'
+            }
+        })
+    }
+
     render() {
-        return <div onClick={this.clickHandler} style={this.state.style}></div>
+        return <div onClick={this.clickHandler} onMouseEnter={this.overHandler} style={this.state.style}></div>
     }
 }
 

@@ -3,7 +3,7 @@ import Pixel from './Pixel'
 
 const App = () => {
   return (
-  [...Array(10000)].map((e, i) => <Pixel key={i} />)
+  [...Array(4000)].map((e, i) => <Pixel key={i} />)
   )
 }
 
