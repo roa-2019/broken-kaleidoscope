@@ -1,9 +1,13 @@
 import React from 'react'
+import Pixel from './Pixel'
 
 const App = () => {
   return (
-    <div>React development has begun!</div>
-  )
+    <React.Fragment>
+      <div></div>
+      <Pixel />
+    </React.Fragment>
+  );
 }
 
 export default App
