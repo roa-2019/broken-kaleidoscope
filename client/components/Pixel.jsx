@@ -61,9 +61,19 @@ export default class Pixel extends React.Component {
     })
   }
 
+  mouseDrag = () => {
+    this.setState({
+      style: {
+        height: '50px',
+        width: '50px',
+        backgroundColor: 'Yellow'
+      }
+    })
+  }
+
   render() {
     return (
-      <div style={this.state.style} onClick={this.clickHandler} onMouseEnter={this.mouseOver} onContextMenu={this.rightClick} onDoubleClick={this.doubleClick}></div>
+      <div style={this.state.style} onClick={this.clickHandler} onMouseEnter={this.mouseOver} onContextMenu={this.rightClick} onDoubleClick={this.doubleClick} onDragEnter={this.mouseDrag}></div>
     )
   }
 }
