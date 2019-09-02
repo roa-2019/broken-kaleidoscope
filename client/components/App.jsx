@@ -87,6 +87,7 @@ class App extends React.Component {
         <Pixel />
         <Pixel />
         <Pixel />
+        <Pixel />
       </React.Fragment>
     )
   }

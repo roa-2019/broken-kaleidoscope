@@ -25,9 +25,19 @@ class Pixel extends React.Component {
         })
     }
 
+    dragYellow = () => {
+        this.setState({
+            style: {
+                height: 50,
+                width: 50,
+                backgroundColor: 'yellow'
+            }
+        })
+    }
+
     render() {
       return (
-        <div style={this.state.style} onClick={this.clickHandler}></div>
+        <div style={this.state.style} onClick={this.clickHandler} onDragEnter={this.dragYellow}></div>
         // <div></div>
       )
     }
