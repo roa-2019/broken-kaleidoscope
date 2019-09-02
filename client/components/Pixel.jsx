@@ -1,21 +1,25 @@
 import React from 'react'
 
+const randomHexColor = () =>
+  `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
+
 class Pixel extends React.Component {
     constructor(props) {
       super(props)
+      this.state = {
+          style: {
+            height: 50,
+            width: 50,
+            backgroundColor: randomHexColor()
+          }
+      }
     }
     render() {
       return (
-        <React.Fragment>
-          <div></div>
-          <div style={{
-            height: 20,
-            width: 20,
-            backgroundColor: 'cornflowerblue'
-          }} />
-        </React.Fragment>
+        <div style={this.state.style}></div>
       )
     }
 }
+
 
 export default Pixel
