@@ -1,10 +1,5 @@
 import React from 'react'
 
-// Create a random hex colour.
-// It's not important to understand _exactly_ how this works right now, since this challenge is
-// mostly just about setting and changing component state. We use it in the same way we might use
-// Knex: it accomplishes a task for us. Try playing with the function in the Node REPL to see it in
-// action.
 const randomColour = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`
 
 const width = 20
@@ -21,7 +16,7 @@ export default class Pixel extends React.Component {
         backgroundColor: randomColour()
       }
       // Uncomment this to play with changing the colours every `n` seconds
-      // update: setInterval(this.changeColour, 1000)
+      // setInterval(this.changeColour, 1000)
     }
   }
 
