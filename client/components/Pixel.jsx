@@ -1,9 +1,9 @@
 import React from 'react';
 
-const randomHexColor = () => 
+const randomHexColor = () =>
   `#${Math.floor(Math.random() * 0x1000000)
     .toString(16)
-    .padStart(6, 0)}`
+    .padStart(6, 0)}`;
 
 class Pixel extends React.Component {
   constructor(props) {
@@ -18,11 +18,24 @@ class Pixel extends React.Component {
     };
   }
 
-  
+  clickHandler = () => {
+    this.setState({
+      style: {
+        height: '100px',
+        width: '100px',
+        backgroundColor: randomHexColor()
+      }
+    });
+  };
 
   render() {
-    return <div id='app' style={this.state.style}></div>
+    return (
+      <div>
+        <div id='app' style={this.state.style} onClick={this.clickHandler}>
+        </div>
+      </div>
+    );
   }
 }
 
-export default Pixel
+export default Pixel;
