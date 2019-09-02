@@ -9,7 +9,43 @@ class App extends React.Component{
   render() {
     return (
     <>
-      <h1>React development has begun!</h1>
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
+      <Pixels />
       <Pixels />
     </>
   )
