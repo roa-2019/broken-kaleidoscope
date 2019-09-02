@@ -9,6 +9,10 @@ class Pixel extends Component {
     }
   }
 
+  componentDidMount() {
+    setInterval(() => this.setState({ backgroundColor: this.randomHexColor() }), 100);
+  }
+
   randomHexColor = () => `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
 
   handleClick = () => {
@@ -44,8 +48,8 @@ class Pixel extends Component {
   render() {
     return (
       <div style={{
-        height: '30px',
-        width: '30px',
+        height: '15px',
+        width: '15px',
         cursor: 'pointer',
         backgroundColor: this.state.backgroundColor
       }}
