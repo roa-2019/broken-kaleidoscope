@@ -2,12 +2,16 @@ import React from 'react'
 
 class Pixel extends React.Component {
     constructor (props) {
-        super(props),
+        super(props)
+
+        const randomHexColor = () =>
+            `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
+
         this.state = {
             style: {
-                height: 20,
-                width: 20,
-                backgroundColor: 'purple',
+                height: 10,
+                width: 10,
+                backgroundColor: randomHexColor(),
             }   
         }
     }
