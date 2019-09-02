@@ -46,8 +46,18 @@ class Pixel extends React.Component {
         })
     }
 
+    doubleClickHandler = evt => {
+        this.setState({
+            style:{
+                height: 10,
+                width: 10,
+                backgroundColor: 'white'
+            }
+        })
+    }
+
     render() {
-        return <div onClick={this.clickHandler} onMouseEnter={this.overHandler} onContextMenu={this.contextMenuHandler} style={this.state.style}></div>
+        return <div onDoubleClick={this.doubleClickHandler} onClick={this.clickHandler} onMouseEnter={this.overHandler} onContextMenu={this.contextMenuHandler}  style={this.state.style}></div>
     }
 }
 
