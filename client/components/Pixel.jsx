@@ -36,15 +36,43 @@ class Pixel extends React.Component {
         backgroundColor: 'black'
       }
     });
-       evt.preventDefault()
-  }
+    evt.preventDefault();
+  };
 
+  whiteSquares = () => {
+    this.setState({
+      style: {
+        height: '100px',
+        width: '100px',
+        backgroundColor: 'white'
+      }
+    });
+    evt.preventDefault();
+  };
+
+  yellowSquares = () => {
+    this.setState({
+      style: {
+        height: '100px',
+        width: '100px',
+        backgroundColor: 'yellow'
+      }
+    });
+    evt.preventDefault();
+  };
 
   render() {
     return (
       <div>
-        <div id='app' style={this.state.style} onClick={this.clickHandler} onMouseEnter={this.clickHandler} onContextMenu={this.blackSquares}>
-        </div>
+        <div
+          id='app'
+          style={this.state.style}
+          onClick={this.clickHandler}
+          onMouseEnter={this.clickHandler}
+          onContextMenu={this.blackSquares}
+          onDoubleClick={this.whiteSquares}
+          onDragEnter={this.yellowSquares}
+        ></div>
       </div>
     );
   }
