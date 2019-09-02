@@ -67,7 +67,13 @@ class Pixel extends React.Component {
     }
 
     render() {
-        return <div onDoubleClick={this.doubleClickHandler} onDragEnter={this.dragHandler} onClick={this.clickHandler} onMouseEnter={this.overHandler} onContextMenu={this.contextMenuHandler} style={this.state.style}></div>
+        return <div onDoubleClick={this.doubleClickHandler} 
+                    onDragEnter={this.dragHandler} 
+                    onClick={this.clickHandler} 
+                    onMouseEnter={this.overHandler} 
+                    onContextMenu={this.contextMenuHandler} 
+                    style={this.state.style}
+        ></div>
     }
 }
 
