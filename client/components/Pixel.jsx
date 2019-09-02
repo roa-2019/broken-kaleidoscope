@@ -28,11 +28,22 @@ class Pixel extends React.Component {
     });
   };
 
+  blackSquares = () => {
+    this.setState({
+      style: {
+        height: '100px',
+        width: '100px',
+        backgroundColor: 'black'
+      }
+    });
+       evt.preventDefault()
+  }
+
 
   render() {
     return (
       <div>
-        <div id='app' style={this.state.style} onClick={this.clickHandler} onMouseEnter={this.clickHandler}>
+        <div id='app' style={this.state.style} onClick={this.clickHandler} onMouseEnter={this.clickHandler} onContextMenu={this.blackSquares}>
         </div>
       </div>
     );
