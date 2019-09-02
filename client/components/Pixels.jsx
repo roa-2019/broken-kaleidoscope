@@ -1,11 +1,26 @@
 import React from 'react'
 
-export default function Pixels(props){
-    return(
-        <div style={{
-            backgroundColor: 'cornflowerblue',
-            width: 100,
-            height: 100,           
-        }}></div>
-    )
+
+class Pixels extends React.Component{
+    constructor(props){
+    super(props)
+
+    this.state ={
+        style:{
+            backgroundColor: '#7FFF00',
+            width: '100px',
+            height: '100px', 
+        }
+    }
+                   
 }
+    render(){
+        return(
+        <div style={this.state.style}>
+        </div>
+    )
+    }    
+    
+}
+
+export default Pixels
