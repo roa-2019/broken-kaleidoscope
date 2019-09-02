@@ -35,8 +35,19 @@ class Pixel extends React.Component {
         })
     }
 
+    contextMenuHandler = evt => {
+        evt.preventDefault()
+        this.setState({
+            style:{
+                height: 10,
+                width: 10,
+                backgroundColor: 'black'
+            }
+        })
+    }
+
     render() {
-        return <div onClick={this.clickHandler} onMouseEnter={this.overHandler} style={this.state.style}></div>
+        return <div onClick={this.clickHandler} onMouseEnter={this.overHandler} onContextMenu={this.contextMenuHandler} style={this.state.style}></div>
     }
 }
 
