@@ -40,9 +40,20 @@ export default class Pixel extends React.Component {
     })
   }
 
+  rightClick = event => {
+    event.preventDefault()
+    this.setState ({
+      style: {
+        height: '50px',
+        width: '50px',
+        backgroundColor: 'Black'
+      }
+    })
+  }
+
   render() {
     return (
-      <div style={this.state.style} onClick={this.clickHandler} onMouseEnter={this.mouseOver}></div>
+      <div style={this.state.style} onClick={this.clickHandler} onMouseEnter={this.mouseOver} onContextMenu={this.rightClick}></div>
     )
   }
 }
