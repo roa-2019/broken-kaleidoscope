@@ -6,6 +6,41 @@ const App = () => {
     <React.Fragment>
       <div></div>
       <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
+      <Pixel />
     </React.Fragment>
   );
 }
