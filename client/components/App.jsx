@@ -1,5 +1,5 @@
 import React from 'react'
-import lightWeight from './YeahBuddy'
+import YeahBuddy from './YeahBuddy'
 
 // const App = () => {
 //   return (
@@ -10,17 +10,17 @@ import lightWeight from './YeahBuddy'
 // export default App
 
 class App extends React.Component {
-  constructor(props){
-  super(props)
-}
-render(){
-  return (
-    <React.Fragment>
-       <div>React development has begun!</div>
-    </React.Fragment>
-  )
-}
-
+  constructor(props) {
+    super(props)
+  }
+  render() {
+    return (
+      <React.Fragment>
+        <div>React development has begun!</div>
+        <YeahBuddy/> 
+      </React.Fragment>
+    )
+  }
 }
 
 export default App

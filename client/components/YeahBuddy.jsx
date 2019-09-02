@@ -1,9 +1,9 @@
 import React from 'react'
 
-function lightWeight() {
+function YeahBuddy() {
     return(
         <div></div>
     )
 }
 
-export default lightWeight
+export default YeahBuddy
