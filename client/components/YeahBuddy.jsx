@@ -3,32 +3,46 @@ import React from 'react'
 const randomHexColor = () =>
     `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
 
+
+
+const width = 20
+const height = width
+
 class YeahBuddy extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
             style: {
-                height: '100px',
-                width: '100px',
+                height,
+                width,
                 backgroundColor: randomHexColor()
             }
         }
-
-
     }
-    handleClick = () => {
+    changeColor = () => {
+        const style = {
+            height,
+            width,
+            backgroundColor: randomHexColor()
+        }
+
         this.setState({
-            style: this.state.style
+           style
         })
     }
-    render() {
-        return (
-            <div style={this.state.style}>
 
-            </div>
+    render() {
+        const { style } = this.state
+        return (
+            <div
+            
+                onClick={() => this.changeColor()}
+                onMouseEnter={() => this.changeColour ()}
+                mouseOver={() => this.changeColor()}
+                style={style} />
+            
         )
     }
 
 }
-
 export default YeahBuddy

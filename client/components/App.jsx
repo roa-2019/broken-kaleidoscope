@@ -33,6 +33,23 @@ class App extends React.Component {
         <YeahBuddy/> 
         <YeahBuddy/> 
         <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
+        <YeahBuddy/> 
 
       </React.Fragment>
     )
