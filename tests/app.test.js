@@ -6,7 +6,6 @@ import Pixel from '../client/components/Pixel'
 
 test('<App />', () => {
   const wrapper = shallow(<App/>)
-  console.log(wrapper.text())
   let pixels = wrapper.find(Pixel)
   expect(pixels.length).toBe(10)
 })

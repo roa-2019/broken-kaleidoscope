@@ -28,7 +28,6 @@ class Pixel extends React.Component {
         backgroundColor: randomHexColor(),
       }
     })
-    evt.preventDefault()
   }
 
   contextHandler = evt => {
