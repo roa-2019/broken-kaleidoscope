@@ -3,7 +3,9 @@ import React from 'react'
 import Pixel from './Pixel'
 
 const App = () => {
-  return  Array.from({length: 50000}, (pixel, i) => <Pixel key={i}/>)
+  return <div>
+    {Array.from({length: 10}, (pixel, i) => <Pixel key={i}/>)}
+  </div>
 }
 
 export default App
