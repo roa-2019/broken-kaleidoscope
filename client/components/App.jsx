@@ -8,19 +8,10 @@ class App extends React.Component {
     super(props)
   }
   render() {
-    return [
-      <React.Fragment>
-        <Pixel />,
-        <Pixel />,
-        <Pixel />,
-        <Pixel />,
-        <Pixel />,
-        <Pixel />
-      </React.Fragment>
-    ]
+    return Array.from({ length: 10000 }, (item, i) => <Pixel key={i}/>)
   }
 }
 
-// return Array.from({ length: 1000 }, (item,i) => <Pixel key={i}/>)
+
 
 export default App

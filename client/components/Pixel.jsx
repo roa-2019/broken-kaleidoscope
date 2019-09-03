@@ -8,8 +8,8 @@ class Pixel extends React.Component {
       super(props)
       this.state = {
           style: {
-            height: 50,
-            width: 50,
+            height: 10,
+            width: 10,
             backgroundColor: randomHexColor()
           }
       }
@@ -18,8 +18,8 @@ class Pixel extends React.Component {
     clickHandler = () => {
         this.setState({
             style: {
-                height: 50,
-                width: 50,
+                height: 10,
+                width: 10,
                 backgroundColor: 'cornflowerblue'
             }
         })
@@ -28,8 +28,8 @@ class Pixel extends React.Component {
     dragYellow = () => {
         this.setState({
             style: {
-                height: 50,
-                width: 50,
+                height: 10,
+                width: 10,
                 backgroundColor: 'yellow'
             }
         })
@@ -38,7 +38,7 @@ class Pixel extends React.Component {
     render() {
       return (
         <div style={this.state.style} onClick={this.clickHandler} onDragEnter={this.dragYellow}></div>
-        // <div></div>
+        
       )
     }
 }
