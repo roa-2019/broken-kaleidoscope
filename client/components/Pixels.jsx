@@ -4,14 +4,12 @@ import randomHexColor from '../helpers.js'
 class Pixels extends React.Component{
     constructor(props){
     super(props)
-
-    
    
     this.state ={
         style:{
             backgroundColor: randomHexColor(),
-            width: '3px',
-            height: '3px', 
+            width: '50px',
+            height: '50px', 
         }
     }
 }
@@ -19,8 +17,8 @@ class Pixels extends React.Component{
             this.setState({
                 style:{
                     backgroundColor: randomHexColor(),
-                    width: '3px',
-                    height: '3px', 
+                    width: '50px',
+                    height: '50px', 
                 }
             })
         }
@@ -29,8 +27,8 @@ class Pixels extends React.Component{
         this.setState({
             style:{
                 backgroundColor: 'pink',
-                    width: '3px',
-                    height: '3px', 
+                    width: '50px',
+                    height: '50px', 
                 
             }
         })
@@ -41,8 +39,8 @@ class Pixels extends React.Component{
         this.setState({
             style:{
                 backgroundColor: 'black',
-                    width: '3px',
-                    height: '3px',                 
+                    width: '50px',
+                    height: '50px',                 
             }
         })
     } 
@@ -52,8 +50,8 @@ class Pixels extends React.Component{
         this.setState({
             style:{
                 backgroundColor: 'white',
-                    width: '3px',
-                    height: '3px',                 
+                    width: '50px',
+                    height: '50px',                 
             }
         })
     } 
@@ -62,8 +60,8 @@ class Pixels extends React.Component{
         this.setState({
             style:{
                 backgroundColor: 'green',
-                    width: '3px',
-                    height: '3px',                 
+                    width: '50px',
+                    height: '50px',                 
             }
         })
     } 
