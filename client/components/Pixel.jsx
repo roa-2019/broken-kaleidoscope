@@ -11,8 +11,8 @@ class Pixel extends React.Component {
 
     this.state = {
       style: {
-        height: '3px',
-        width: '3px',
+        height: '50px',
+        width: '50px',
         backgroundColor: randomHexColor()
       }
     };
@@ -21,8 +21,8 @@ class Pixel extends React.Component {
   clickHandler = () => {
     this.setState({
       style: {
-        height: '3px',
-        width: '3px',
+        height: '50px',
+        width: '50px',
         backgroundColor: randomHexColor()
       }
     });
@@ -31,8 +31,8 @@ class Pixel extends React.Component {
   blackSquares = () => {
     this.setState({
       style: {
-        height: '3px',
-        width: '3px',
+        height: '50px',
+        width: '50px',
         backgroundColor: 'black'
       }
     });
@@ -42,8 +42,8 @@ class Pixel extends React.Component {
   whiteSquares = () => {
     this.setState({
       style: {
-        height: '3px',
-        width: '3px',
+        height: '50px',
+        width: '50px',
         backgroundColor: 'white'
       }
     });
@@ -53,17 +53,28 @@ class Pixel extends React.Component {
   yellowSquares = () => {
     this.setState({
       style: {
-        height: '3px',
-        width: '3px',
+        height: '50px',
+        width: '50px',
         backgroundColor: 'yellow'
       }
     });
     evt.preventDefault();
   };
 
+  changeColor = () => {
+    this.setState({
+        style: {
+        height: '50px',
+        width: '50px',
+        backgroundColor: randomHexColor(),
+        transition: 'color 0.2s'
+      }
+    });
+  };
+
   render() {
     return (
-      <div>
+      <React.Fragment>
         <div
           id='app'
           style={this.state.style}
@@ -72,8 +83,9 @@ class Pixel extends React.Component {
           onContextMenu={this.blackSquares}
           onDoubleClick={this.whiteSquares}
           onDragEnter={this.yellowSquares}
+          setInterval={this.changeColor}
         ></div>
-      </div>
+      </React.Fragment>
     );
   }
 }
