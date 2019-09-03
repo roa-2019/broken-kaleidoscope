@@ -7,9 +7,7 @@ class Pixel extends Component {
     this.state = {
       backgroundColor: this.randomHexColor(),
     }
-  }
 
-  componentDidMount() {
     setInterval(() => this.setState({ backgroundColor: this.randomHexColor() }), 100);
   }
 
