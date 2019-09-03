@@ -15,7 +15,8 @@ class YeahBuddy extends React.Component {
             style: {
                 height,
                 width,
-                backgroundColor: randomHexColor()
+                backgroundColor: randomHexColor(),
+                fontFamily: 'Arial' 
             }
         }
     }
@@ -23,7 +24,8 @@ class YeahBuddy extends React.Component {
         const style = {
             height,
             width,
-            backgroundColor: randomHexColor()
+            backgroundColor: randomHexColor(),
+            fontFamily: 'Arial' 
         }
 
         this.setState({

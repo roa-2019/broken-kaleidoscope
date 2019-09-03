@@ -32,6 +32,11 @@ describe('<YeahBuddy />', () => {
         let div = wrapper.find('div')
         expect(div.prop('style').height).toBe(25)
     })
+    test('font to be times new roman', () => {
+        let wrapper = shallow(<YeahBuddy />)
+        let div = wrapper.find('div')
+        expect(div.prop('style').fontFamily).toBe('Arial')
+    })
 })
 
 
