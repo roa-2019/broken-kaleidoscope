@@ -7,7 +7,7 @@ describe('<Pixel />', () => {
   test("is 20 px wide (using prop())", () => {
     let wrapper = shallow(<Pixel />)
     let div = wrapper.find('div')
-    expect(div.prop('style').width).toBe(20)
+    expect(div.prop('style').width).toBe(15)
   })
   test("changes style on click", () => {
     let wrapper = shallow(<Pixel />)

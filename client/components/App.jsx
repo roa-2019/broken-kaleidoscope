@@ -4,8 +4,10 @@ import Pixel from './Pixel'
 const App = () => {
 
   return (
-    Array.from({ length: 5000 }, (pixel, i) =>
-     <Pixel key={i} />)
+    <div>
+      {Array.from({ length: 1000 }, (pixel, i) =>
+        <Pixel key={i} />)}
+    </div>
   )
 }
 
