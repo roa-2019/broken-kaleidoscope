@@ -1,22 +1,31 @@
 import React from 'react'
 
-// class App extends React.Component {
-//   render() {
-//   return <div></div>
-//   }
-// }
+const randomColour = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`
 
-var divStyle = {
-  backgroundColor: '#bfa2c8',
-  height: '100px',
-  width: '100px'
+
+export default class Pixel extends React.Component {
+
+  render() {
+    return <div style={this.state.styleOne}></div >
+  }
+
+  // const randomColour = () => {
+  //   return `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
+  // }
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      styleOne: {
+        backgroundColor: randomColour(),
+        height: '100px',
+        width: '100px'
+      }
+    }
+
+
+  }
 }
-
-export default function ReturnDivs () {
-  return <div style = {divStyle}></div>
-}
-
-//make the loop that returns divs
 
 
 
