@@ -37,5 +37,16 @@ describe('<Pixel />', () => {
         div = wrapper.find('div')
         expect(div.prop('style').backgroundColor).toBe('white')
     })
+    test("onDragEnter event changes div to yellow", () => {
+        let wrapper = shallow(<Pixel />)
+        let div = wrapper.find('div')
+        div.simulate('dragEnter' , {preventDefault: () => {}})
+
+
+        div = wrapper.find('div')
+        expect(div.prop('style').backgroundColor).toBe('yellow')
+
+
+    })
 })
  
