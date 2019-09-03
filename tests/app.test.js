@@ -2,9 +2,12 @@ import React from 'react'
 import {shallow} from 'enzyme'
 
 import App from '../client/components/App'
+import Pixel from '../client/components/Pixel'
 
-test('<App />', () => {
-  const expected = 'React development has begun!'
-  const wrapper = shallow(<App />)
-  expect(wrapper.text()).toBe(expected)
+describe('<App />', () => {
+  test("renders 10000 pixels", () => {
+    const wrapper = shallow(<App />)
+    expect(wrapper.length).toBe(10000)
+  })
 })
+
