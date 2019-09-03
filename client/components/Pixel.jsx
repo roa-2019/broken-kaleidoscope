@@ -36,7 +36,6 @@ class Pixel extends React.Component {
         backgroundColor: 'black'
       }
     });
-    evt.preventDefault();
   };
 
   whiteSquares = () => {
@@ -47,7 +46,7 @@ class Pixel extends React.Component {
         backgroundColor: 'white'
       }
     });
-    evt.preventDefault();
+  
   };
 
   yellowSquares = () => {
@@ -58,19 +57,9 @@ class Pixel extends React.Component {
         backgroundColor: 'yellow'
       }
     });
-    evt.preventDefault();
+  
   };
 
-  changeColor = () => {
-    this.setState({
-        style: {
-        height: '50px',
-        width: '50px',
-        backgroundColor: randomHexColor(),
-        transition: 'color 0.2s'
-      }
-    });
-  };
 
   render() {
     return (
@@ -83,7 +72,6 @@ class Pixel extends React.Component {
           onContextMenu={this.blackSquares}
           onDoubleClick={this.whiteSquares}
           onDragEnter={this.yellowSquares}
-          setInterval={this.changeColor}
         ></div>
       </React.Fragment>
     );

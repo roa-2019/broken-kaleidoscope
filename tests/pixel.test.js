@@ -20,7 +20,14 @@ describe('<Pixel />', () => {
 
         div = wrapper.find('div')
         expect(div.prop('style').backgroundColor).not.toEqual(firstColor)
+    })
+    test("onContextMenu event changes div to black", () => {
+        let wrapper = shallow(<Pixel />)
+        let div = wrapper.find('div')
+        div.simulate('contextMenu', {preventDefault: () => {}})
 
+        div = wrapper.find('div')
+        expect(div.prop('style').backgroundColor).toBe('black')
 
     })
 })
