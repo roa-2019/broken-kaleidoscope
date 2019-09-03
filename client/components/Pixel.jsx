@@ -10,8 +10,8 @@ export default class Pixel extends React.Component {
 
     this.state = {
       style: {
-        height: '50px',
-        width: '50px',
+        height: '5px',
+        width: '5px',
         backgroundColor: this.randomHexColor()
       }
     }
@@ -23,8 +23,8 @@ export default class Pixel extends React.Component {
   clickHandler = () => {
     this.setState({
       style: {
-        height: '50px',
-        width: '50px',
+        height: '5px',
+        width: '5px',
         backgroundColor: this.randomHexColor()
       }
     })
@@ -33,8 +33,8 @@ export default class Pixel extends React.Component {
   mouseOver = () => {
     this.setState({
       style: {
-        height: '50px',
-        width: '50px',
+        height: '5px',
+        width: '5px',
         backgroundColor: 'ForestGreen'
       }
     })
@@ -44,8 +44,8 @@ export default class Pixel extends React.Component {
     event.preventDefault()
     this.setState ({
       style: {
-        height: '50px',
-        width: '50px',
+        height: '5px',
+        width: '5px',
         backgroundColor: 'Black'
       }
     })
@@ -54,8 +54,8 @@ export default class Pixel extends React.Component {
   doubleClick = () => {
     this.setState({
       style: {
-        height: '50px',
-        width: '50px',
+        height: '5px',
+        width: '5px',
         backgroundColor: 'White'
       }
     })
@@ -64,8 +64,8 @@ export default class Pixel extends React.Component {
   mouseDrag = () => {
     this.setState({
       style: {
-        height: '50px',
-        width: '50px',
+        height: '5px',
+        width: '5px',
         backgroundColor: 'Yellow'
       }
     })
