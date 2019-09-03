@@ -46,7 +46,7 @@ class Pixels extends React.Component{
     } 
 
     handleDoubleClick = (e) => {
-        e.preventDefault()
+       
         this.setState({
             style:{
                 backgroundColor: 'white',
@@ -75,9 +75,8 @@ class Pixels extends React.Component{
         onDoubleClick={this.handleDoubleClick}
         onDragEnter={this.handleDragEnter}>
         </div>
-    )
+        )
     }    
-    
 }
 
 export default Pixels
