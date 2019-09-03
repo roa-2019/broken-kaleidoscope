@@ -28,7 +28,14 @@ describe('<Pixel />', () => {
 
         div = wrapper.find('div')
         expect(div.prop('style').backgroundColor).toBe('black')
+    })
+    test("onDoubleClick event changes div to be white", () => {
+        let wrapper = shallow(<Pixel />)
+        let div = wrapper.find('div')
+        div.simulate('doubleClick', {preventDefault: () => {}})
 
+        div = wrapper.find('div')
+        expect(div.prop('style').backgroundColor).toBe('white')
     })
 })
  
