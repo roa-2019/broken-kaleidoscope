@@ -6,7 +6,7 @@ const randomHexColor = () =>
 
 
 const width = 20
-const height = width
+const height = 25
 
 class YeahBuddy extends React.Component {
     constructor(props) {

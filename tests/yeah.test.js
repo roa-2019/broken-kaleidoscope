@@ -27,6 +27,11 @@ describe('<YeahBuddy />', () => {
         div = wrapper.find('div')
         expect(div.prop('style').backgroundColor).not.toEqual('currentColor')
     })
+    test('height to be 25',() => {
+        let wrapper = shallow(<YeahBuddy />)
+        let div = wrapper.find('div')
+        expect(div.prop('style').height).toBe(25)
+    })
 })
 
 
