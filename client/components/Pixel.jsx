@@ -18,18 +18,11 @@ class Pixel extends React.Component {
   
   render () {
     return (
-      <div onClick={this.clickHandler} onDragEnter={this.clickHandler} style={this.state.style}></div>
+      <div onClick={this.forwardColor} onDragEnter={this.forwardColor}  onContextMenu={this.backColor} style={this.state.style}></div>
     )
   }
 
-  clickHandler = () => {
-    // setInterval(() => {this.setState({
-    //   style: {
-    //     width: '50px',
-    //     height: '50px',
-    //     backgroundColor: `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
-    //   }
-    // })}, 1000)
+  forwardColor = () => {
     let colors = this.state.colorList
     let currentColor = this.state.colorIndex
     let newColor = ''
@@ -51,6 +44,29 @@ class Pixel extends React.Component {
     })
     
   }
+  backColor = (e) => {
+    e.preventDefault()
+    let colors = this.state.colorList
+    let currentColor = this.state.colorIndex
+    let newColor = ''
+
+    if( currentColor == 0){
+      newColor = colors[colors.length-1]
+      currentColor = colors.length-1
+    } else {
+      newColor = colors[currentColor - 1]
+      currentColor -= 1
+    }
+    this.setState({
+      style: {
+        width:'20px', 
+        height:'20px',
+        backgroundColor: newColor
+      },
+      colorIndex: currentColor
+    })
+  }
+
 }
 
 export default Pixel

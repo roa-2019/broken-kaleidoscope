@@ -4,7 +4,7 @@ import Pixel from './Pixel'
 const App = () => {
   let pixels = []
   for (let i = 0; i < 2256; i++) {
-    pixels.push(<Pixel />)
+    pixels.push(<Pixel key={i} />)
 
   }
   return (
