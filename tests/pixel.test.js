@@ -13,6 +13,19 @@ describe('<Pixel />', () => {
         div = wrapper.find('div')
         expect(div.prop('style').backgroundColor).not.toEqual(oldColor)
     })
-    test()
+    test("pixel changes to yellow with mouse drag", () => {
+        const wrapper = shallow(<Pixel />)
+        let div = wrapper.find('div')
+        div.simulate('dragEnter')
+        div = wrapper.find('div')
+        expect(div.prop('style').backgroundColor).toBe('yellow')
+    })
+    test("pixel width is 10", () => {
+        const wrapper = shallow(<Pixel />)
+        let div = wrapper.find('div')
+        div = wrapper.find('div')
+        expect(div.prop('style').width).toEqual(10)
+    })
 })
+
 
