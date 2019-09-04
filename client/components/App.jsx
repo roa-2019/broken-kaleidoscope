@@ -26,7 +26,7 @@ class App extends React.Component {
       <React.Fragment>
         <div>BrewDog!</div>
         <button onClick={this.getBeer}>Click for a random BrewDog Beer!</button>
-        <p></p>
+        <div>{this.getBeer}</div>
       </React.Fragment>
     )
   }
