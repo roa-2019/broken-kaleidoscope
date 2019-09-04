@@ -26,7 +26,8 @@
     ]
   },
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "superagent": "^5.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
